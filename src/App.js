@@ -1,13 +1,14 @@
 import React, { Component } from "react";
 import List from "./List.js";
 
-class App extends Component {
+class App extends React.Component {
   static defaultProps = {
     store: {
       lists: [],
       allCards: {},
     },
   };
+
   render() {
     const { store } = this.props;
     return (
@@ -16,16 +17,13 @@ class App extends Component {
           <h1>Trelloyes!</h1>
         </header>
         <div className="App-list">
-          {store.lists.map((l, idx) => {
-            return (
-              <List
-                key={idx}
-                id={l.id}
-                header={l.header}
-                cards={l.cardIds.map((id) => store.allCards[id])}
-              />
-            );
-          })}
+          {store.lists.map((list) => (
+            <List
+              key={list.id}
+              header={list.header}
+              cards={list.cardIds.map((id) => store.allCards[id])}
+            />
+          ))}
         </div>
       </main>
     );
