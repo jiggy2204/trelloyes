@@ -10,56 +10,46 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
 .App {
   min-height: calc(100vh - 16px);
   min-width: calc(100vw - 16px);
   background: #0079bf;
   padding: 8px;
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
 }
-
-.App-header h1 {
-  margin: 0;
-  color: #f6f6f6;
-  font-size: 20px;
-  padding: 0 14px 10px;
+.App-header {
+  h1 {
+    margin: 0;
+    color: #f6f6f6;
+    font-size: 20px;
+    padding: 0 14px 10px;
+  }
 }
-
 .App-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .List {
   min-width: 218px;
+  &:not(:first-of-type) {
+    margin-left: 8px;
+  }
 }
-
-.List:not(:first-of-type) {
-  margin-left: 8px;
-}
-
 .List-header {
+  h2 {
+    margin: 0;
+    font-size: 18px;
+    padding: 10px 8px 8px;
+  }
   background-color: #dfe3e6;
   padding: 0 6px 4px;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
 }
-
-.List-header h2 {
-  margin: 0;
-  font-size: 18px;
-  padding: 10px 8px 8px;
-}
-
 .List-cards {
+  h3 {
+    margin: 0;
+  }
   background-color: #dfe3e6;
   padding: 0 6px 4px;
   border-bottom-left-radius: 4px;
@@ -68,11 +58,6 @@ body {
   max-height: calc(100vh - 102px);
   overflow: auto;
 }
-
-.List-cards h3 {
-  margin: 0;
-}
-
 .List-add-button {
   background: none;
   border: none;
@@ -80,35 +65,28 @@ body {
   font-weight: bold;
   padding: 5px 6px;
   display: block;
+  &:hover {
+    cursor: pointer;
+  }
 }
-
-.List-add-button:hover {
-  cursor: pointer;
-}
-
 .Card {
   border-radius: 4px;
   background-color: #fff;
-  -webkit-box-shadow: 0 1px 0 rgba(9, 45, 66, 0.25);
   box-shadow: 0 1px 0 rgba(9, 45, 66, 0.25);
   padding: 8px;
   color: #17394d;
   margin-bottom: 10px;
+  h3 {
+    font-size: 14px;
+    margin-bottom: 4px;
+  }
+  p {
+    margin: 0;
+    font-size: 12px;
+  }
+  button {
+    float: right;
+    background-color: #eff1f3;
+    border-radius: 6px;
+  }
 }
-
-.Card h3 {
-  font-size: 14px;
-  margin-bottom: 4px;
-}
-
-.Card p {
-  margin: 0;
-  font-size: 12px;
-}
-
-.Card button {
-  float: right;
-  background-color: #eff1f3;
-  border-radius: 6px;
-}
-/*# sourceMappingURL=styles.css.map */
