@@ -4,9 +4,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -21,8 +19,8 @@ body {
   display: inline-flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .App-header h1 {
@@ -90,7 +88,7 @@ body {
   border-radius: 4px;
   background-color: #fff;
   -webkit-box-shadow: 0 1px 0 rgba(9, 45, 66, 0.25);
-  box-shadow: 0 1px 0 rgba(9, 45, 66, 0.25);
+          box-shadow: 0 1px 0 rgba(9, 45, 66, 0.25);
   padding: 8px;
   color: #17394d;
   margin-bottom: 10px;
@@ -111,4 +109,4 @@ body {
   background-color: #eff1f3;
   border-radius: 6px;
 }
-/*# sourceMappingURL=styles.css.map */
+/*# sourceMappingURL=index.css.map */
